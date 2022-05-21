@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color:#d8d8d8;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 100vh;
+}
+
+.container-phone {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone {
+    height: 35rem;
+}
+
+.container-continue {
+    width: 50%;
+    min-height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.group {
+    background-color: #eeeeee;
+    border: 1px solid #bbbbbb;
+    padding: 1.3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.group:nth-child(1) {
+    height: 20rem;
+}
+
+.group:nth-child(2) {
+
+    height: 6rem;
+}
+
+.logo {
+    height: 3rem;
+    margin-bottom: 10px;
+}
+
+.profile-photo {
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.profile-photo img {
+    height: 5rem;
+}
+
+.continue {
+    background-color: #52bd77;
+    color: white;
+    padding: 9px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.remove {
+    color: #52bd77;
+    font-weight: 700;
+}
+
+.not-account {
+    color:rgb(143, 143, 143);
+}
+
+.not-account span {
+    color: #52bd77;
+    font-weight: 700;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 6rem;
+}
+
+.get-app p {
+    font-weight: 700;
+    margin-top: 10px;;
+}
+
+.download {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.app-download {
+    width: 10rem;
+    height: 3rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./imagens/disponivel-app-store.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./imagens/disponivel-google-play.png');
+}
+
+@media(max-width:1013px) {
+    .flex-container {
+        width: 80%;
+    }
+}
+
+@media(max-width:715px) {
+    .container-phone{
+        display: none;
+    }
+    .flex-container{
+        width: 90%;
+    }
+    body{
+        background-color: #eeeeee;
+    }
+    .group {
+        border: 1px solid transparent;
+    }
+    .container-continue{
+        width: 100%;
+    }
+    .download{
+        flex-wrap: wrap;
+    }
+
+    .app-download {
+        width: 9.33rem;
+        height: 2.8rem;
+    }
+}
